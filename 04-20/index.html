@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='ko'>
+	<head>
+	</head>
+	<body>
+		<hr>
+		<h1><abbr title="한국디지털미디어고등학교">디미고</abbr></h1>
+		<hr>
+		Lorem ipsum dolor sit amet consectetur, <u>adipisicing elit</u>. Consequatur natus saepe tempore, nesciunt laudantium maiores laborum amet enim velit, nihil atque consequuntur itaque eveniet, explicabo ad? Iusto soluta sapiente quas!
+		Velit fugit unde est, molestias tempora similique obcaecati ipsam magni molestiae temporibus ut eveniet tempore! Architecto, repellat doloribus repudiandae nulla deleniti vel tempora, vitae, debitis voluptate sint consequuntur optio animi!
+		Provident unde quod adipisci accusantium, saepe ipsum modi autem ea excepturi porro suscipit deserunt. Similique voluptatibus iusto voluptas illo veniam harum amet, repudiandae consequuntur! Deleniti veritatis sapiente laboriosam doloremque consequatur.
+		<blockquote>
+			Possimus excepturi incidunt magnam voluptatem fuga rerum ex, cupiditate consequuntur dicta in, nihil qui animi repellendus, quam et officiis! Minima velit architecto dolores consequatur eligendi deserunt ex dolorum odio magni?
+			Nobis error culpa ea earum iure hic quam illo ex qui vitae aliquam ducimus vero, illum deserunt aperiam quibusdam ipsa debitis distinctio corporis reiciendis harum doloremque? Veniam earum rem ipsam?
+		</blockquote>
+		<pre>
+			Modi magnam explicabo officiis, animi amet error non eligendi dolores voluptatem iure recusandae unde minima veniam soluta maxime nesciunt placeat voluptas quibusdam sapiente, dignissimos repudiandae totam facilis dicta! Dolores, velit!
+		</pre>
+		<i>
+			Libero mollitia quisquam dolorum ipsam. Dicta aliquid dolorem quis dolor ex architecto, laborum deserunt aliquam odit harum reiciendis sunt beatae quae blanditiis velit libero, optio facere cumque! Saepe, hic ipsa!
+		</i>
+		<b>Animi modi</b>, <em>voluptate amet excepturi aliquam obcaecati voluptas quam architecto hic expedita nisi nam nemo ullam consectetur iusto.</em> Ab reprehenderit aperiam iste? Praesentium animi quos tempore commodi et harum voluptate?
+		<strong>Natus</strong>, alias dignissimos accusantium obcaecati animi nobis facilis fugiat perspiciatis minima earum! Minus ab quisquam quasi explicabo, <mark>vero iste est, natus rerum accusantium numquam cumque inventore</mark> quaerat optio possimus sapiente.
+		<abbr title="Lorem Ipsum Dolor Sit">LIDS</abbr> commodi nostrum <s>enim quia hic</s> perferendis repellendus, at praesentium tempora obcaecati. Accusantium voluptas, temporibus beatae, illo iste perferendis error eos iure nostrum ducimus aspernatur earum inventore. Voluptates, quisquam. Commodi?
+		<ol type="I">
+			<li>조</li>
+			<li>조</li>
+			<li>이</li>
+			<li>김</li>
+			<li>마</li>
+		</ol>
+		<ul	style="list-style-type: '🤣';">
+			<li>강아지</li>
+			<li>고양이</li>
+			<li>캥거루</li>
+			<li>쿼카</li>
+			<li>너구리</li>
+		</ul>
+
+		<table border="1" style="border-spacing: 0;">
+			<colgroup>
+				<col>
+				<col style="background-color: magenta;">
+				<col>
+				<col style="background-color: cyan;">
+			</colgroup>
+			<tr>
+				<td>가</td>
+				<td>나</td>
+				<td>다</td>
+				<td>라</td>
+			</tr>
+			<tr>
+				<td>마</td>
+				<td>바</td>
+				<td>사</td>
+				<td>아</td>
+			</tr>
+			<tr>
+				<td>자</td>
+				<td>차</td>
+				<td>카</td>
+				<td>타</td>
+			</tr>
+			<tr>
+				<td>파</td>
+				<td>하</td>
+				<td>그</td>
+				<td>느</td>
+			</tr>
+		</table>
+
+		<ol type="I" id="orderedList"></ol>
+		
+		<script>
+			const orderedList = document.getElementById('orderedList');
+			let i = 1;
+
+			for(let j = 0; j < 4000; j++) {
+				const item = document.createElement('li');
+				item['innerText'] = i++;
+
+				orderedList.appendChild(item);
+			}
+
+			//window.addEventListener('click', function () {
+			//	for(let j = 0; j < 100; j++) {
+			//		const item = document.createElement('li');
+			//		item['innerText'] = i++;
+
+			//		orderedList.appendChild(item);
+			//	}
+
+			//	return;
+			//});
+		</script>
+	</body>
+</html>

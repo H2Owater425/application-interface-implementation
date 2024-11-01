@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>스스ㅡ	</title>
+	</head>
+	<body>
+		<form action="">
+			<select id="select" name="action">
+				<option value="-1">-선택-</option>
+				<option value="0">자기</option>
+				<option value="1">먹기</option>
+				<option value="2">싸기</option>
+				<option value="3">놀기</option>
+			</select>
+
+			<input type="text" list="datalist">
+
+			<datalist id="datalist">
+				<option value="0" label="자기">자기</option>
+				<option value="1" label="먹기">먹기</option>
+				<option value="2" label="싸기">싸기</option>
+				<option value="3" label="놀기">놀기</option>
+			</datalist>
+
+			<textarea cols="30" rows="10"></textarea>
+
+			<input id="submit" type="submit">
+		</form>
+
+		<form onInput="result['value'] = Number.parseInt(firstNumber['value'], 10) + Number.parseInt(secondNumber['value'], 10);">
+			<input type="number" name="firstNumber" value="0">
+			+
+			<input type="number" name="secondNumber" value="0">
+			=
+			<output name="result">0</output>
+		</form>
+
+		<script>
+			document.getElementById('submit').addEventListener('click', function (mouseEvent) {
+				if(document.getElementById('select')['value'] === '-1') {
+					mouseEvent.preventDefault();
+					alert('선택하라고...');
+				}
+
+				return;
+			});
+		</script>
+	</body>
+</html>

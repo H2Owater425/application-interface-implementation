@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Download Something</title>
+		<style>
+			progress {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<progress id="progressBar" value="0" max="99"></progress>
+		<button id="downloadButton">Download</button>
+		<script>
+			let isDownloading = false;
+			let progress = 0;
+
+			const progressBar = document.getElementById('progressBar');
+			document.getElementById('downloadButton').addEventListener('click', function () {
+				if(!isDownloading) {
+					progress = 0;
+					isDownloading = true;
+
+					const intervalId = window.setInterval(function () {
+						if(progress !== 98) {
+							progress += Math.floor(Math.random() * 5);
+							
+							if(progress > 98) {
+								progress = 98;
+							}
+
+							progressBar['value'] = progress;
+						} else {
+							window.clearInterval(intervalId);
+							
+							progressBar['value'] = '0';
+
+							isDownloading = false;
+
+							alert('Error occured, try again');
+						}
+
+						return;
+					}, 800);
+				}
+
+				return;
+			});
+		</script>
+	</body>
+</html>

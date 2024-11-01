@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>집갈사람</legend>
+				
+				<label for="name">선착순</label>
+				<input id="name" type="text" maxlength="4" size="10" autofocus="autofocus">
+				<input id="password" type="password">
+				<input name="slider" type="range" oninput="result.value = slider.value;">
+				<input type="number" name="result" min="0" max="100" value="50" readonly disabled oninput="slider.value = result.value;">
+			</fieldset>
+			<fieldset>
+				<legend>밥먹자</legend>
+				<input type="checkbox" id="lunch1">
+				<label for="lunch1">햄김치덮밥</label>
+				<input type="checkbox" id="lunch2">
+				<label for="lunch2">함박스테이크</label>
+				<input type="checkbox" id="lunch3">
+				<label for="lunch3">비프스테이크</label>
+				<input type="checkbox" id="lunch4">
+				<label for="lunch4">계란국</label>
+				<input type="checkbox" id="lunch5">
+				<label for="lunch5">사과</label>
+
+			</fieldset>
+			<fieldset>
+				<input type="color">
+				<input type="date">
+				<input id="file" type="file">
+			</fieldset>
+			<input type="button" value="눌러봐" onclick="console.log(document.getElementById('file')['files'])">
+		</form>
+
+		<form action="http://localhost:3000/medias" method="post">
+			<input type="file">
+			<input type="submit" value="s">
+		</form>
+	</body>
+</html>

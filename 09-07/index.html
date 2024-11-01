@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let a = {
+				name: 'aaa',
+				age: 5,
+				chairMan: true
+			};
+
+			let b = a;
+
+			alert(a['name']);
+			
+			b['name'] = 'bbb';
+			
+			alert(a['name']);
+
+			const c = [1,2,3];
+			
+			console.log(c);
+
+			console.log(c['length']);
+
+			c['length'] = 2;
+
+			console.log(c);
+			
+			console.log(c['length']);
+
+			c.unshift(-3, -2, -1, 0);
+
+			console.log(c);
+
+			c.shift();
+
+			console.log(c);
+
+			for(let i = 0; i < c['length']; i++) {
+				document.write(c[i] + '<br>');
+			}
+		</script>
+	</body>
+</html>

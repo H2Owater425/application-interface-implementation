@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			//function add(a, b) {
+			//	return a + b;
+			//}
+
+			//const add = (a, b) => a + b;
+
+			//alert(add(Number.parseInt(prompt(), 10), Number.parseInt(prompt(), 10)));
+
+			const me = {
+				name: '김강민',
+				age: 17,
+				height: 184,
+				weight: 75,
+				hobby: function () {
+					alert('게임왕 ' + this['name']);
+
+					return;
+				}
+			};
+
+			//me['name'] = 'JERRY';
+
+			//me['isSmoking'] = false;
+			
+			//alert(me['isSmoking']);
+
+			//delete me['isSmoking'];
+
+			//alert(me['isSmoking']);
+
+			//for(const key in me) {
+			//	alert(key + ': ' + me[key]);
+			//}
+
+			for(const key in me) {
+				document.write(key + ': ' + me[key] + '<br>');
+			}
+
+			function getScores() {
+				return {
+					korean: 90,
+					mathematics: 60,
+					english: 98
+				};
+			}
+
+			const scores = getScores();
+
+			console.log(scores);
+
+			me.hobby();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo&display=swap');
+
+			* {
+				font-family: 'Nanum Brush Script';
+			}
+
+			a:visited {
+				color: brown;
+			}
+
+			a:hover {
+				color: aqua;
+			}
+
+			a:active {
+				color: violet;
+				font-size: 100px;
+			}
+
+			h2 {
+				color: brown !important;
+			}
+
+			li {
+				color: blue;
+			}
+
+			#tree > li {
+				border: 1px solid red;
+			}
+
+			#link {
+				font: bold 22px '맑은 고딕';
+			}
+
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://www.naver.com/" style="font-variant: small-caps;">https://www.naver.com/</a>
+		<a href="https://www.youtube.com/" id="link">https://www.youtube.com/</a>
+		<div id="container">
+			<h2 style="color: green;">수학여행 6일 남았습니다</h2>
+			<p>지참 금지 목록</p>
+			<ul>
+				<li>담배</li>
+				<li>양주</li>
+				<li>소주</li>
+				<li>막걸리</li>
+				<li>노트북</li>
+				<li>맨탈</li>
+			</ul>
+			<ol id="tree">
+				<li>담배</li>
+				<li>양주</li>
+				<li>소주</li>
+				<li>막걸리</li>
+				<li>노트북</li>
+				<li>
+					맨탈
+					<ol>
+						<li style="color: green;">집에다</li>
+						<li>두고옴</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

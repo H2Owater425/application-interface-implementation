@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//const age = prompt('나이 입력');
+
+		//if(age >= 19) {
+		//	document.write('술 한잔 하러 가');
+		//} else {
+		//	document.write('내년에 와');
+		//}
+
+		//for(let i = 0; i < 1000; i++) {
+		//	document.write('<br>시즌 ' + (i + 1) + '호 음주');
+		//}
+
+		//let i = 0;
+
+		//window.setInterval(function () {
+		//	document.write('<br>배' + '딱'.repeat(++i));
+		//	window.scroll(true)
+		//}, 600)
+
+			switch(prompt('알고 싶은 게임의 제작사')) {
+				case '삼국지': {
+					document.write('KOEI');
+					break;
+				}
+
+				case '롤':
+				case '발로란트': {
+					document.write('라이엇게임즈');
+					break;
+				}
+
+				case '스타크래프트':
+				case '오버워치': {
+					document.write('블리자드');
+					break;
+				}
+
+				default: {
+					document.write('너희 곧 고3.');
+				}
+			}
+
+			let message = '안녕하세요';
+
+			function sayHello(name) {
+				let newName = name || '2학년4반';
+
+				message = `${message} ${newName} 님.`;
+			}
+
+			sayHello(prompt('이름을 입력하세요'));
+</script>
+</body>
+</html>
